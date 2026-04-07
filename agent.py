@@ -4,8 +4,9 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 from langgraph.checkpoint.memory import MemorySaver
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage
+import os
 from tools import search_flights, search_hotels, calculate_budget, check_flight_details, book_flight, manage_booking
 from dotenv import load_dotenv
 from rich.console import Console
@@ -28,8 +29,12 @@ class AgentState(TypedDict):
 # 3. Khởi tạo LLM và Tools
 tools_list = [search_flights, search_hotels, calculate_budget, check_flight_details, book_flight, manage_booking]
 
-# Sử dụng model Gemini theo yêu cầu của user
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+# Sử dụng OpenRouter API theo yêu cầu của user
+llm = ChatOpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+    model="google/gemini-2.5-flash",
+)
 llm_with_tools = llm.bind_tools(tools_list)
 
 # 4. Agent Node

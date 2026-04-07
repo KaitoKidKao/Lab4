@@ -82,4 +82,10 @@ Xin lỗi bạn nhé, mình là trợ lý du lịch của TravelBuddy nên chỉ
 Nếu bạn có bất kỳ câu hỏi nào về các chuyến đi, đặt vé máy bay, khách sạn hay lên kế hoạch du lịch thì cứ hỏi mình nha!
 
 ---
+**Bạn:** Tôi muốn bay từ Đà Nẵng ra Hà Nội
+
+**TravelBuddy:**
+Rất tiếc! Hiện tại không có chuyến bay trực tiếp nào từ Đà Nẵng ra Hà Nội trong hệ thống của TravelBuddy rồi. Nhưng nếu bạn muốn, mình có thể tìm các chuyến từ Hà Nội về Đà Nẵng nhé.
+
+---
 
