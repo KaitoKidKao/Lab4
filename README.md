@@ -8,15 +8,13 @@ Hệ thống có khả năng tương tác tự nhiên với người dùng bằn
 
 ## 🌟 Chức Năng Chính
 
-TravelBuddy sở hữu bộ 6 Công cụ (Tools) mạnh mẽ bao gồm:
+TravelBuddy sở hữu bộ 6 Công cụ (Tools) bao gồm:
 1. **Tìm kiếm chuyến bay (`search_flights`)**: Tra cứu lịch trình, giờ bay, giá tiền, số ghế trống dựa trên DataBase.
 2. **Tìm kiếm khách sạn (`search_hotels`)**: Tra cứu chỗ ở theo mức giá tối đa, lọc theo sao và tự động xếp hạng rating.
 3. **Quản lý ngân sách (`calculate_budget`)**: Tự động tính toán chi ly sổ sách, kiểm tra độ rủi ro thâm hụt tiền túi của khách hàng.
 4. **Kiểm tra hành lý (`check_flight_details`)**: Xuất thông tin chính sách hành lý tiêu chuẩn của từng hãng bay riêng biệt.
 5. **Đặt vé thông minh (`book_flight`)**: Cấp phát mã PNR thành công chỉ khi AI thu thập đủ thông tin hành khách.
 6. **Hủy/Xem trước vé (`manage_booking`)**: Quản lý vòng đời tấm vé đã ảo đã chốt trên hệ thống bộ nhớ.
-
-> **⚠️ Hệ thống rào chắn (Guardrails):** Model được tinh chỉnh bằng System Prompt nghiêm ngặt, từ chối trả lời mọi câu hỏi nằm ngoài phạm vi du lịch Việt Nam (như Toán học, Logic, Coding, v.v.).
 
 ---
 
@@ -54,4 +52,4 @@ python agent.py
 ## 📑 Tài Liệu Đi Kèm
 * `test_cases.md`: Các câu lệnh chuẩn để người dùng nhập thử.
 * `test_result.md`: Báo cáo Log Terminal minh chứng thực tế các Tool đã vận hành tốt ra sao.
-* `Assignment.md`: Yêu cầu kỹ thuật chi tiết của bài Lab.
+
